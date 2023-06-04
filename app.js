@@ -205,7 +205,7 @@
 // // type of corecion
 // const num1 = 8 
 // const num2 = '9'
-// const res = 'num1 + num2'
+// const res = 'num1 + num2' 
 
 // Null = null or nothing
 let agee = null
@@ -346,11 +346,34 @@ let b = a;
 console.log(a==b);
 console.log(a===b);
  
+let markweight = 78
+let markheight = 1.69
+let markBMI = markweight/markheight**2
+
+let johnweight = 92
+let johnheight = 1.95
+ let jonhBMI =johnweight/johnheight**2
+//  console.log(BMI1);
+//  console.log(BMI2);
+//  console.log(BMI1 > BMI2);
+let markweight2 = 78
+let markheight2 = 1.69
+let markBMI2 = markweight2/markheight2**2
+
+let johnweight2 = 92
+let johnheight2 = 1.95
+ let jonhBMI2 =johnweight2/johnheight2**2
+//  console.log(BMI1);
 
 
+if (markBMI > jonhBMI) {console.log('Mark\'s BMI is higher than jonh\'');
+} else if ( markBMI < jonhBMI){console.log('jonh\'sBMI is higher than mark\'BMI');
+}else {console.log('they are equal');} 
+console.log(`'Mark\'s BMI (89) is higher than jonh\''BMI (66)`);
 
 
-
-
-
-
+const dolphins_score = (96 + 108 + 89)/3
+const koalas_score = (88 + 91 + 110)/3
+ if(dolphins_score > koalas_score){console.log('dolphins_score is the winner');
+} else if ( koalas_score > dolphins_score){console.log('koalas_score is the winner');
+} else ( 'they draw' ) 
