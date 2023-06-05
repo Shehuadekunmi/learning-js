@@ -208,172 +208,319 @@
 // const res = 'num1 + num2' 
 
 // Null = null or nothing
-let agee = null
-console.log(agee, agee + 4, `my agee is ${agee}`);
+// let agee = null
+// console.log(agee, agee + 4, `my agee is ${agee}`);
 
-// undefined
-let year;
-console.log(year);
-console.log(year, year + 4, `the year is ${year}`);
+// // undefined
+// let year;
+// console.log(year);
+// console.log(year, year + 4, `the year is ${year}`);
 
-// truthy value are string, num, expect 0 
-console.log(Boolean('2'));
+// // truthy value are string, num, expect 0 
+// console.log(Boolean('2'));
 
-// false values 0, null and undifined
+// // false values 0, null and undifined
 
 
-// control flow== conditional statment
-                // conditional statment
-                //  if (condition){code} eg
-  const password1 = '12453476'   
-  if (password1.length > 6){console.log('your password is strong');} 
+// // control flow== conditional statment
+//                 // conditional statment
+//                 //  if (condition){code} eg
+//   const password1 = '12453476'   
+//   if (password1.length > 6){console.log('your password is strong');} 
   
-            //  if else
-            // if (condition){code 1
-        // }else{code2
-        // } eg
-            const password2 = '124'   
-  if (password2.length > 6){console.log('your password is strong');
-} else{console.log('your password is weak');
-}
+//             //  if else formular
+//         if (condition){code 1
+//         }else{code2
+//         } eg
+//             const password2 = '124'   
+//   if (password2.length > 6){console.log('your password is strong');
+// } else{console.log('your password is weak');
+// }
 
-// if (true && true && true) eg
-const password = '124@12345'   
-  if (password.length > 6 && password.includes('@')){console.log('your password is strong');
-} else{console.log('your password is weak');
-}
+// // if (true && true && true) eg
+// const password = '124@12345'   
+//   if (password.length > 6 && password.includes('@')){console.log('your password is strong');
+// } else{console.log('your password is weak');
+// }
 
-const country = 'Qatar'
- const continent = 'Asian'
- const population = 21
- const isIsland = false
- const language = 'Arabic'
-//  Sarah speaks english has less than 50 people and is not an island
-// you should live in Qatar
-// Qatar does not meet your criteria
-if(language === 'English' && population < 50 && isIsland) {console.log(`you should live in ${country}`);
-}else {console.log(`${country} does not meet criteria`);
-}
+// const country = 'Qatar'
+//  const continent = 'Asian'
+//  const population = 21
+//  const isIsland = false
+//  const language = 'Arabic'
+// //  Sarah speaks english has less than 50 people and is not an island
+// // you should live in Qatar
+// // Qatar does not meet your criteria
+// if(language === 'English' && population < 50 && isIsland) {console.log(`you should live in ${country}`);
+// }else {console.log(`${country} does not meet criteria`);
+// }
 
-const age = 18
-//  >=18 
+// const age = 18
+// //  >=18 
  
-if(age >= 18){console.log('you are an adult');} else {console.log('you are not an adult');}
+// if(age >= 18){console.log('you are an adult');} else {console.log('you are not an adult');}
 
-// if (condition){} else if (another condi){} else if (cond){} else{}   eg
-const password3 = '12345678@ysdr'
-// recommended >7 and is include @, strong >7 and weak
-if (password3.length >= 7 && password3.includes ('@')) {console.log('your password is recommended');
-} else if (password3.length >=7){console.log('your password is strong');
-}else{console.log('your password is weak');}
+// // if (condition){} else if (another condi){} else if (cond){} else{}   eg
+// const password3 = '12345678@ysdr'
+// // recommended >7 and is include @, strong >7 and weak
+// if (password3.length >= 7 && password3.includes ('@')) {console.log('your password is recommended');
+// } else if (password3.length >=7){console.log('your password is strong');
+// }else{console.log('your password is weak');}
 
-const num1 = 0
-if (num1 > 0 ){console.log('your num is positive');
-}else if (num1 < 0) {console.log('your num is negative');
-}else {console.log('undefined');}
+// const num1 = 0
+// if (num1 > 0 ){console.log('your num is positive');
+// }else if (num1 < 0) {console.log('your num is negative');
+// }else {console.log('undefined');}
 
-// even or odd
-const num2 =55
-if (num2 % 2 === 0 ){console.log('its even number');
-}else {console.log('its odd number');}
+// // even or odd
+// const num2 =55
+// if (num2 % 2 === 0 ){console.log('its even number');
+// }else {console.log('its odd number');}
 
-const agea = 50
-if ( agea < 18){console.log('Welcome to the baby section');
-} else if (agea >= 18 && agea <= 50){console.log('welcome to the club');
-}else {console.log('welcone to the vip section');}
+// const agea = 50
+// if ( agea < 18){console.log('Welcome to the baby section');
+// } else if (agea >= 18 && agea <= 50){console.log('welcome to the club');
+// }else {console.log('welcone to the vip section');}
 
-            //    OR
-            const age1 = 55
-            if ( age1 < 18){console.log('Welcome to the baby section');
-            } else if (age1 <= 50){console.log('welcome to the club');
-            }else {console.log('welcone to the vip section');}
+//             //    OR
+//             const age1 = 55
+//             if ( age1 < 18){console.log('Welcome to the baby section');
+//             } else if (age1 <= 50){console.log('welcome to the club');
+//             }else {console.log('welcone to the vip section');}
 
 
-                       // switch statment
-   const day = 1
-   switch (day) {
-    case 1:
-        console.log('MONDAY');
-        break;
-        case 2:
-        console.log('TUEDAY');
-        break;
-        case 3:
-        console.log('WEDNESDAY');
-        break;
-        case 4:
-        console.log('THURSDAY');
-        break;
-        case 5:
-        console.log('FRIDAY');
-        break;
-        case 6:
-        console.log('SARTURDAY');
-        break;
+//                        // switch statment
+//    const day = 1
+//    switch (day) {
+//     case 1:
+//         console.log('MONDAY');
+//         break;
+//         case 2:
+//         console.log('TUEDAY');
+//         break;
+//         case 3:
+//         console.log('WEDNESDAY');
+//         break;
+//         case 4:
+//         console.log('THURSDAY');
+//         break;
+//         case 5:
+//         console.log('FRIDAY');
+//         break;
+//         case 6:
+//         console.log('SARTURDAY');
+//         break;
    
-    default:
-        console.log('not a fai');
-        break;
-   }       
+//     default:
+//         console.log('not a fai');
+//         break;
+//    }       
    
-   const grade = 'D'
-   switch (grade) {
-    case 'A':
-        case 'a':
-        console.log('EXCELLENT');
-        break;
-        case 'B':
-            case 'b':
-        console.log('VERY GOOD');
-        break;
-        case 'C':
-        console.log('GOOD');
-        break;
-        case 'D':
-        console.log('FAIR');
-        break;
-        case 'F':
-        console.log('FAIL');
-        break;
+//    const grade = 'D'
+//    switch (grade) {
+//     case 'A':
+//         case 'a':
+//         console.log('EXCELLENT');
+//         break;
+//         case 'B':
+//             case 'b':
+//         console.log('VERY GOOD');
+//         break;
+//         case 'C':
+//         console.log('GOOD');
+//         break;
+//         case 'D':
+//         console.log('FAIR');
+//         break;
+//         case 'F':
+//         console.log('FAIL');
+//         break;
    
-    default:
-        console.log('NOT A FALID GRADE');
-        break;
-   }
+//     default:
+//         console.log('NOT A FALID GRADE');
+//         break;
+//    }
    
-let a =[];
-let b = a;
-console.log(a==b);
-console.log(a===b);
+// let a =[];
+// let b = a;
+// console.log(a==b);
+// console.log(a===b);
+    //   assingment
+// let markweight = 78
+// let markheight = 1.69
+// let markBMI = markweight/markheight**2
+
+// let johnweight = 92
+// let johnheight = 1.95
+//  let jonhBMI =johnweight/johnheight**2
+// //  console.log(BMI1);
+// //  console.log(BMI2);
+// //  console.log(BMI1 > BMI2);
+// let markweight2 = 78
+// let markheight2 = 1.69
+// let markBMI2 = markweight2/markheight2**2
+
+// let johnweight2 = 92
+// let johnheight2 = 1.95
+//  let jonhBMI2 =johnweight2/johnheight2**2
+// //  console.log(BMI1);
+// console.log(Boolean(markBMI > jonhBMI));
+// console.log(Boolean(markBMI < jonhBMI));
+// if (markBMI > jonhBMI) {
+//     console.log('Mark\'s BMI is higher than jonh\'');
+// } else if ( markBMI < jonhBMI){
+//     console.log('jonh\'sBMI is higher than mark\'BMI');
+// }else {console.log('they are equal');} 
+
+// console.log(`'Mark\'s BMI ${markBMI} is higher than jonh\''BMI ${jonhBMI}`);
+
+
+// const dolphins_score = (96 + 96 + 96)/3
+// const koalas_score = (96 + 96 + 96)/3
+//  if( dolphins_score > koalas_score)
+//  {console.log(`dolphins_score is the winner with the average score of ${dolphins_score}`);
+// } else if (koalas_score >  dolphins_score)
+// {console.log(`koalas_score is the winner with the average score of ${koalas_score}`);
+// } else {
+//     console.log('the two have the same average score');
+// }
+
  
-let markweight = 78
-let markheight = 1.69
-let markBMI = markweight/markheight**2
+// 05-06-23
+//  ternary operator(another way to writ conditions statement it used for two choics)
+// formula   = condition ? action 1 : action 2 eg
+// 15 > 2 ? console.log('yes') : console.log('no');
+// const num = 42
+// num % 2 === 0
+// ? console.log('this is even number') 
+// : console.log('this is odd number');
 
-let johnweight = 92
-let johnheight = 1.95
- let jonhBMI =johnweight/johnheight**2
-//  console.log(BMI1);
-//  console.log(BMI2);
-//  console.log(BMI1 > BMI2);
-let markweight2 = 78
-let markheight2 = 1.69
-let markBMI2 = markweight2/markheight2**2
+// //  loops = repitive tasks - -for, -while, do. while loop
+// // for (initialaizer let i = 0; condition i < 5; increment i++){code} eg
+// for (let i = 0; i< 5; i++){
+//     console.log(`in the loop ${i}`);
+// }
+// console.log('outside of the loop');
 
-let johnweight2 = 92
-let johnheight2 = 1.95
- let jonhBMI2 =johnweight2/johnheight2**2
-//  console.log(BMI1);
+// let sum = 0
+// for (let i = 0; i <= 100; i++){
+//     sum += i
+// }
+// console.log(sum);
+
+// // for while = while(condition){code increment} eg
+// let x = 0;
+// while(x < 20){
+//     console.log('hello');
+//     x++;
+// }
+// // do while will do it first b4 writing the condition eg
+// let y = 0
+// do {console.log('HEY');
+//     y++
+// } while (y < 5);
 
 
-if (markBMI > jonhBMI) {console.log('Mark\'s BMI is higher than jonh\'');
-} else if ( markBMI < jonhBMI){console.log('jonh\'sBMI is higher than mark\'BMI');
-}else {console.log('they are equal');} 
-console.log(`'Mark\'s BMI (89) is higher than jonh\''BMI (66)`);
+// funcation are block  of code desigh to perform a particulary task. we have 3 ways of writing function
+// a function declaration eg
+function myFunction(){
+    console.log('HELLO');
+    console.log('YOU ARE WELCOME');
+}
+myFunction()
+
+function greet(){
+    console.log('welcome');
+}
+greet()
+
+function greet(name){
+    console.log('welcome' + name);
+}
+greet('toyosi')
+greet('ola')
+// for anomanous wit age 
+function greet(name = 'user',  age = 23){
+    console.log('welcome' + name + age);
+}
+greet()
+greet('ade', 55)
+greet('abe', 45)
+greet('lola', 24)
+
+// calculate the age of user (2003- year) 
+function calcage(year) {
+    const age = 2023 - year;
+    console.log(`Your age is ${age}`);
+}
+calcage(1960)
+calcage(1990)
+
+function sumnums(a, b) {
+    console.log(`the sum of ${a} and ${b} is ${a + b}`);
+}
+sumnums(345, 4)
+
+// class work
+function describecountry(country, population, capitalcity) {
+    console.log(`${country} has ${population} millon people and its capital city is ${capitalcity}`);
+}
+describecountry('france', 12, 'paris')
+describecountry('Belgium', 4, 'Brussels')
+describecountry('Russia', 68, 'Moscow')
 
 
-const dolphins_score = (96 + 108 + 89)/3
-const koalas_score = (88 + 91 + 110)/3
- if(dolphins_score > koalas_score){console.log('dolphins_score is the winner');
-} else if ( koalas_score > dolphins_score){console.log('koalas_score is the winner');
-} else ( 'they draw' ) 
+// checking email
+checkemail('abcd@gmail.com');
+
+function checkemail(email) {
+    if (email.includes('@')){
+        console.log(`${email} is a valid email address`);
+    } else {console.log(`${email} is not a valid email`);
+}
+}
+checkemail('fgd')
+
+// function expression
+const myFunction2 = function(a, b) {
+    console.log('anything');
+    console.log(a + b);
+}
+myFunction2(4, 5)
+ 
+//   return keyword
+
+const precious = function (a, b){
+    return a * b
+}
+
+ const test = precious(10, 10)
+ console.log(test);
+
+//  create a functions that calc average of the two teams
+// d = 103, 98, 89
+// k = 110, 87, 95
+const calcaverage = function (a, b, c) {
+    const avg =  (a + b + c)/3
+    // return avg.toFixed(2)
+    return Number(avg.toFixed(3))
+}  
+const avgdolphin = calcaverage(143, 98, 89)
+const avgkaola = calcaverage(110, 87, 95)
+console.log(avgdolphin, avgkaola);
+
+function checkwinner(teamA, teamB) {
+    if (teamA > teamB) {
+        console.log('teamA won');
+    }else if (teamB > teamA) {
+        console.log('teamB won');
+    } else {
+        console.log('No winners');
+    }
+}
+checkwinner(avgdolphin, avgkaola)
+//  arrays
+//  objects
+//  asybchronous
+//  DOM
+
