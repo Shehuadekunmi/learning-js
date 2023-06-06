@@ -387,7 +387,7 @@
 
  
 // 05-06-23
-//  ternary operator(another way to writ conditions statement it used for two choics)
+//  ternary operator(another way of writting conditional statement it used for two choics)
 // formula   = condition ? action 1 : action 2 eg
 // 15 > 2 ? console.log('yes') : console.log('no');
 // const num = 42
@@ -423,103 +423,239 @@
 
 // funcation are block  of code desigh to perform a particulary task. we have 3 ways of writing function
 // a function declaration eg
-function myFunction(){
-    console.log('HELLO');
-    console.log('YOU ARE WELCOME');
-}
-myFunction()
+// function myFunction(){
+//     console.log('HELLO');
+//     console.log('YOU ARE WELCOME');
+// }
+// myFunction()
 
-function greet(){
-    console.log('welcome');
-}
-greet()
+// function greet(){
+//     console.log('welcome');
+// }
+// greet()
 
-function greet(name){
-    console.log('welcome' + name);
-}
-greet('toyosi')
-greet('ola')
-// for anomanous wit age 
-function greet(name = 'user',  age = 23){
-    console.log('welcome' + name + age);
-}
-greet()
-greet('ade', 55)
-greet('abe', 45)
-greet('lola', 24)
+// function greet(name){
+//     console.log('welcome' + name);
+// }
+// greet('toyosi')
+// greet('ola')
+// // for anomanous wit age 
+// function greet(name = 'user',  age = 23){
+//     console.log('welcome' + name + age);
+// }
+// greet()
+// greet('ade', 55)
+// greet('abe', 45)
+// greet('lola', 24)
 
-// calculate the age of user (2003- year) 
-function calcage(year) {
-    const age = 2023 - year;
-    console.log(`Your age is ${age}`);
-}
-calcage(1960)
-calcage(1990)
+// // calculate the age of user (2003- year) 
+// function calcage(year) {
+//     const age = 2023 - year;
+//     console.log(`Your age is ${age}`);
+// }
+// calcage(1960)
+// calcage(1990)
 
-function sumnums(a, b) {
-    console.log(`the sum of ${a} and ${b} is ${a + b}`);
+// function sumnums(a, b) {
+//     console.log(`the sum of ${a} and ${b} is ${a + b}`);
+// }
+// sumnums(345, 4)
+
+// // class work
+// function describecountry(country, population, capitalcity) {
+//     console.log(`${country} has ${population} millon people and its capital city is ${capitalcity}`);
+// }
+// describecountry('france', 12, 'paris')
+// describecountry('Belgium', 4, 'Brussels')
+// describecountry('Russia', 68, 'Moscow')
+
+
+// // checking email
+// checkemail('abcd@gmail.com');
+
+// function checkemail(email) {
+//     if (email.includes('@')){
+//         console.log(`${email} is a valid email address`);
+//     } else {console.log(`${email} is not a valid email`);
+// }
+// }
+// checkemail('fgd')
+
+// // function expression
+// const myFunction2 = function(a, b) {
+//     console.log('anything');
+//     console.log(a + b);
+// }
+// myFunction2(4, 5)
+ 
+// //   return keyword
+
+// const precious = function (a, b){
+//     return a * b
+// }
+
+//  const test = precious(10, 10)
+//  console.log(test);
+
+// //  create a functions that calc average of the two teams
+// // d = 103, 98, 89
+// // k = 110, 87, 95
+// const calcaverage = function (a, b, c) {
+//     const avg =  (a + b + c)/3
+//     // return avg.toFixed(2)
+//     return Number(avg.toFixed(3))
+// }  
+// const avgdolphin = calcaverage(143, 98, 89)
+// const avgkaola = calcaverage(110, 87, 95)
+// console.log(avgdolphin, avgkaola);
+
+// function checkwinner(teamA, teamB) {
+//     if (teamA > teamB) {
+//         console.log('teamA won');
+//     }else if (teamB > teamA) {
+//         console.log('teamB won');
+//     } else {
+//         console.log('No winners');
+//     }
+// }
+// checkwinner(avgdolphin, avgkaola)
+ 
+//    06-06-23
+// ARROW FUNCTION  formula = name = ()=>{}    eg
+
+const logger = (a, b, c) => {
+    const total = a + b + c
+    return total;
 }
-sumnums(345, 4)
+console.log(logger(4, 5, 6));
+// we could arrow function for 1 line return eg
+const diff = (a, b) => a - b
+console.log(diff(45, 33));
+
+const calcavg = (a, b, c) => {
+    const avg = (a + b + c)/3
+    return Number(avg.toFixed(2))
+}
+console.log(calcavg(23, 44, 67));
+
+
+// variable scoping is where var accessing from, we've 2 types - global and local var
+// global var can be access everywhere eg 'ade', while local can only be access inside a block of code eg {ade}
+
+
+//  arrays are use to store more than 1 value inside a var. it denoted by [element, element, etc]
+const std = ['mofe', 'precious', 'shehu']
+console.log(std);
+
+// getting elemnt in arr eg
+console.log(std[2]);
+// getting the last element
+console.log(std[std.length - 1]);
+
+// converting an array to a string - tostring and join eg
+console.log(std.toString());
+console.log(std.join(' + ')); 
+
+// adding element to an Array - push(add element at back) and unshift(add element to the front) eg
+std.push('nike,') 
+std.push('lola')
+console.log(std);
+
+std.unshift('ebuka')
+console.log(std);
+
+// remove element - pop(remove from back) and shift(remove from front) eg
+std.pop()
+std.shift()
+console.log(std);
+
+// sort arrange element alph while reverse turn it upside down eg
+std.sort()
+std.reverse()
+console.log(std);
+
+console.log(std.includes('@'));
+console.log(std.includes('shehu'));
+//  concat eg
+const std2 = ['sola', 'solo']
+console.log(std.concat(std2));
+console.log(std.concat(std2, ['ade', 'ty']));
+
+//       slice
+console.log(std.slice(0, 2));
 
 // class work
-function describecountry(country, population, capitalcity) {
-    console.log(`${country} has ${population} millon people and its capital city is ${capitalcity}`);
-}
-describecountry('france', 12, 'paris')
-describecountry('Belgium', 4, 'Brussels')
-describecountry('Russia', 68, 'Moscow')
+const Countries = ['Nigeria', 'Qatar', 'Kuwait', 'Estonia']
+console.log(Countries.length);
+Countries.length > 5 ? console.log('the countries is more than 5') : console.log('its less than 5');
 
+let savings = 30000
+const transactions = [5000, -10000,  -100]
+transactions.push(-2000)
+transactions.push(5000)
+transactions.push(-3000)
+transactions.pop(3000)
+let debit = 0
+let credit = 0
+// console.log(transactions);
 
-// checking email
-checkemail('abcd@gmail.com');
-
-function checkemail(email) {
-    if (email.includes('@')){
-        console.log(`${email} is a valid email address`);
-    } else {console.log(`${email} is not a valid email`);
-}
-}
-checkemail('fgd')
-
-// function expression
-const myFunction2 = function(a, b) {
-    console.log('anything');
-    console.log(a + b);
-}
-myFunction2(4, 5)
- 
-//   return keyword
-
-const precious = function (a, b){
-    return a * b
-}
-
- const test = precious(10, 10)
- console.log(test);
-
-//  create a functions that calc average of the two teams
-// d = 103, 98, 89
-// k = 110, 87, 95
-const calcaverage = function (a, b, c) {
-    const avg =  (a + b + c)/3
-    // return avg.toFixed(2)
-    return Number(avg.toFixed(3))
-}  
-const avgdolphin = calcaverage(143, 98, 89)
-const avgkaola = calcaverage(110, 87, 95)
-console.log(avgdolphin, avgkaola);
-
-function checkwinner(teamA, teamB) {
-    if (teamA > teamB) {
-        console.log('teamA won');
-    }else if (teamB > teamA) {
-        console.log('teamB won');
-    } else {
-        console.log('No winners');
+for(i = 0; i < transactions.length; i++){
+    // console.log(transactions[i]);
+    savings += transactions[i]
+    if (transactions[i] < 0) {
+        debit += transactions[i]
+        console.log(`You have been debited ${transactions[i]}`);
+    }else {
+        credit += transactions[i]
+        console.log(`You have been credited ${transactions[i]}`);
     }
 }
-checkwinner(avgdolphin, avgkaola)
-//  arrays
+console.log(`your account balance is ${savings}`);
+console.log(`the total debit is ${debit}`);
+console.log(`the total credit is ${credit}`);
+// arrays ppties and methods 
+// methods are includes, sort, pop, push, shift, unshift, slice, splice, concat, join, toString etc
+
+// filter, find, map, forEach
+// higher order function, callback func
+ const friends = ['jonh', 'lola', 'adam', 'tunde', 'ade' ]
+ friends.forEach((friend) => {
+    console.log(`the name of my friend is ${friend}`);
+ })
+
+ friends.forEach((f, index) => {
+    console.log(f, index);
+ })
+
+//  map - map and foreach are worknthe same way
+friends.map((val) =>{
+    if (val === 'lola' || val === 'adam') {
+        console.log(`${val} is my best friend`);
+    } else{
+        console.log(`${val} is just my friend`);
+    }
+})
+ 
+// filter - it used to filter element base on command you give eg
+const filterfriends = friends.filter((friend) => {
+    // return friend.startsWith('a')
+    return friend.length > 3
+})
+console.log(filterfriends);
+
+// find - used to find 1 thing i.e the first thing it comes incontant with eg
+
+const founduser = friends.find((friend) =>{
+    return friend.startsWith('a')
+})
+console.log(founduser);
+
+// we could use arrow fxt for filter and find becu they are just one line of code eg
+ 
+const result = friends.filter((friend) => friend.length > 3)
+const result2 = friends.find((f) => f.startsWith('a'))
+console.log(result, result2);
+
 //  objects
 //  asybchronous
 //  DOM
