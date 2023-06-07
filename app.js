@@ -500,6 +500,7 @@
 // //  create a functions that calc average of the two teams
 // // d = 103, 98, 89
 // // k = 110, 87, 95
+
 // const calcaverage = function (a, b, c) {
 //     const avg =  (a + b + c)/3
 //     // return avg.toFixed(2)
@@ -512,7 +513,7 @@
 // function checkwinner(teamA, teamB) {
 //     if (teamA > teamB) {
 //         console.log('teamA won');
-//     }else if (teamB > teamA) {
+//     }else if (teamB > teamA) { 
 //         console.log('teamB won');
 //     } else {
 //         console.log('No winners');
@@ -520,143 +521,333 @@
 // }
 // checkwinner(avgdolphin, avgkaola)
  
-//    06-06-23
-// ARROW FUNCTION  formula = name = ()=>{}    eg
+// //    06-06-23
+// // ARROW FUNCTION  formula = name = ()=>{}    eg
 
-const logger = (a, b, c) => {
-    const total = a + b + c
-    return total;
-}
-console.log(logger(4, 5, 6));
-// we could arrow function for 1 line return eg
-const diff = (a, b) => a - b
-console.log(diff(45, 33));
+// const logger = (a, b, c) => {
+//     const total = a + b + c
+//     return total;
+// }
+// console.log(logger(4, 5, 6));
+// // we could arrow function for 1 line return eg
+// const diff = (a, b) => a - b
+// console.log(diff(45, 33));
 
-const calcavg = (a, b, c) => {
-    const avg = (a + b + c)/3
-    return Number(avg.toFixed(2))
-}
-console.log(calcavg(23, 44, 67));
-
-
-// variable scoping is where var accessing from, we've 2 types - global and local var
-// global var can be access everywhere eg 'ade', while local can only be access inside a block of code eg {ade}
+// const calcavg = (a, b, c) => {
+//     const avg = (a + b + c)/3
+//     return Number(avg.toFixed(2))
+// }
+// console.log(calcavg(23, 44, 67));
 
 
-//  arrays are use to store more than 1 value inside a var. it denoted by [element, element, etc]
-const std = ['mofe', 'precious', 'shehu']
-console.log(std);
+// // variable scoping is where var accessing from, we've 2 types - global and local var
+// // global var can be access everywhere eg 'ade', while local can only be access inside a block of code eg {ade}
 
-// getting elemnt in arr eg
-console.log(std[2]);
-// getting the last element
-console.log(std[std.length - 1]);
 
-// converting an array to a string - tostring and join eg
-console.log(std.toString());
-console.log(std.join(' + ')); 
+// //  arrays are use to store more than 1 value inside a var. it denoted by [element, element, etc]
+// const std = ['mofe', 'precious', 'shehu']
+// console.log(std);
 
-// adding element to an Array - push(add element at back) and unshift(add element to the front) eg
-std.push('nike,') 
-std.push('lola')
-console.log(std);
+// // getting elemnt in arr eg
+// console.log(std[2]);
+// // getting the last element
+// console.log(std[std.length - 1]);
 
-std.unshift('ebuka')
-console.log(std);
+// // converting an array to a string - tostring and join eg
+// console.log(std.toString());
+// console.log(std.join(' + ')); 
 
-// remove element - pop(remove from back) and shift(remove from front) eg
-std.pop()
-std.shift()
-console.log(std);
+// // adding element to an Array - push(add element at back) and unshift(add element to the front) eg
+// std.push('nike,') 
+// std.push('lola')
+// console.log(std);
 
-// sort arrange element alph while reverse turn it upside down eg
-std.sort()
-std.reverse()
-console.log(std);
+// std.unshift('ebuka')
+// console.log(std);
 
-console.log(std.includes('@'));
-console.log(std.includes('shehu'));
-//  concat eg
-const std2 = ['sola', 'solo']
-console.log(std.concat(std2));
-console.log(std.concat(std2, ['ade', 'ty']));
+// // remove element - pop(remove from back) and shift(remove from front) eg
+// std.pop()
+// std.shift()
+// console.log(std);
 
-//       slice
-console.log(std.slice(0, 2));
+// // sort arrange element alph while reverse turn it upside down eg
+// std.sort()
+// std.reverse()
+// console.log(std);
 
-// class work
-const Countries = ['Nigeria', 'Qatar', 'Kuwait', 'Estonia']
-console.log(Countries.length);
-Countries.length > 5 ? console.log('the countries is more than 5') : console.log('its less than 5');
+// console.log(std.includes('@'));
+// console.log(std.includes('shehu'));
+// //  concat eg
+// const std2 = ['sola', 'solo']
+// console.log(std.concat(std2));
+// console.log(std.concat(std2, ['ade', 'ty']));
 
-let savings = 30000
-const transactions = [5000, -10000,  -100]
-transactions.push(-2000)
-transactions.push(5000)
-transactions.push(-3000)
-transactions.pop(3000)
-let debit = 0
-let credit = 0
-// console.log(transactions);
+// //       slice
+// console.log(std.slice(0, 2));
 
-for(i = 0; i < transactions.length; i++){
-    // console.log(transactions[i]);
-    savings += transactions[i]
-    if (transactions[i] < 0) {
-        debit += transactions[i]
-        console.log(`You have been debited ${transactions[i]}`);
-    }else {
-        credit += transactions[i]
-        console.log(`You have been credited ${transactions[i]}`);
-    }
-}
-console.log(`your account balance is ${savings}`);
-console.log(`the total debit is ${debit}`);
-console.log(`the total credit is ${credit}`);
-// arrays ppties and methods 
-// methods are includes, sort, pop, push, shift, unshift, slice, splice, concat, join, toString etc
+// // class work
+// const Countries = ['Nigeria', 'Qatar', 'Kuwait', 'Estonia']
+// console.log(Countries.length);
+// Countries.length > 5 ? console.log('the countries is more than 5') : console.log('its less than 5');
 
-// filter, find, map, forEach
-// higher order function, callback func
- const friends = ['jonh', 'lola', 'adam', 'tunde', 'ade' ]
- friends.forEach((friend) => {
-    console.log(`the name of my friend is ${friend}`);
- })
+// let savings = 30000
+// const transactions = [5000, -10000,  -100]
+// transactions.push(-2000)
+// transactions.push(5000)
+// transactions.push(-3000)
+// transactions.pop(3000)
+// let debit = 0
+// let credit = 0
+// // console.log(transactions);
 
- friends.forEach((f, index) => {
-    console.log(f, index);
- })
+// for(i = 0; i < transactions.length; i++){
+//     // console.log(transactions[i]);
+//     savings += transactions[i]
+//     if (transactions[i] < 0) {
+//         debit += transactions[i]
+//         console.log(`You have been debited ${transactions[i]}`);
+//     }else {
+//         credit += transactions[i]
+//         console.log(`You have been credited ${transactions[i]}`);
+//     }
+// }
+// console.log(`your account balance is ${savings}`);
+// console.log(`the total debit is ${debit}`);
+// console.log(`the total credit is ${credit}`);
+// // arrays ppties and methods 
+// // methods are includes, sort, pop, push, shift, unshift, slice, splice, concat, join, toString etc
 
-//  map - map and foreach are worknthe same way
-friends.map((val) =>{
-    if (val === 'lola' || val === 'adam') {
-        console.log(`${val} is my best friend`);
-    } else{
-        console.log(`${val} is just my friend`);
-    }
-})
+// // filter, find, map, forEach
+// // higher order function, callback func
+//  const friends = ['jonh', 'lola', 'adam', 'tunde', 'ade' ]
+//  friends.forEach((friend) => {
+//     console.log(`the name of my friend is ${friend}`);
+//  })
+
+//  friends.forEach((f, index) => {
+//     console.log(f, index);
+//  })
+
+// //  map - map and foreach are worknthe same way
+// friends.map((val) =>{
+//     if (val === 'lola' || val === 'adam') {
+//         console.log(`${val} is my best friend`);
+//     } else{
+//         console.log(`${val} is just my friend`);
+//     }
+// })
  
-// filter - it used to filter element base on command you give eg
-const filterfriends = friends.filter((friend) => {
-    // return friend.startsWith('a')
-    return friend.length > 3
-})
-console.log(filterfriends);
+// // filter - it allow us to get new array base on the filter argument. used to filter element base on command you give eg
+// const filterfriends = friends.filter((friend) => {
+//     // return friend.startsWith('a')
+//     return friend.length > 3
+// })
+// console.log(filterfriends);
 
-// find - used to find 1 thing i.e the first thing it comes incontant with eg
+// // find - used to find 1 thing i.e the first thing it comes incontant with eg
 
-const founduser = friends.find((friend) =>{
-    return friend.startsWith('a')
-})
-console.log(founduser);
+// const founduser = friends.find((friend) =>{
+//     return friend.startsWith('a')
+// })
+// console.log(founduser);
 
-// we could use arrow fxt for filter and find becu they are just one line of code eg
+// // we could use arrow fxt for filter and find becu they are just one line of code eg
  
-const result = friends.filter((friend) => friend.length > 3)
-const result2 = friends.find((f) => f.startsWith('a'))
-console.log(result, result2);
+// const result = friends.filter((friend) => friend.length > 3)
+// const result2 = friends.find((f) => f.startsWith('a'))
+// console.log(result, result2);
 
-//  objects
+// reduce - is one of the most value array and its use with number
+//  accumulator (acc) value (val) eg
+
+const movement = [300, -50, 700, 400, -300]
+const total = movement.reduce((acc, val)=>{
+    return acc + val;
+}, 0)   
+console.log(`Your total bill is ${total}`);
+    //  07-06-23
+
+//  objects is another important array it could use to store xpl arrays and its aallow us to describle our ppties eg
+// object - ppties, methods
+const user = {
+    firstname: 'Tom',
+    surname: 'Jerry',
+    age: 34,
+    job: 'interior decoration',
+    friends: ['jj', 'yk', 'ay']
+}
+console.log(user);
+
+
+// access ppties from an obj they are of two type- dot notation and bracket
+// dot eg
+console.log(user.firstname.toUpperCase());
+console.log(user.age);
+
+// bracket we could use expression on bracket eg
+console.log(user['friends']);
+console.log(user['friends'].includes('kk'));
+
+const namekey = 'name'
+console.log(user['sur' + namekey]);
+
+// adding ppties to an obj eg
+user.hasacar = true
+user.status = 'Married'
+console.log(user);
+
+// remove ppties --delete eg
+delete user.friends
+console.log(user);
+
+// obj methods are fxt working on an obj
+
+const book = {
+    title: 'Rich dad poor dad',
+    author: 'Robert kiyosaki',
+    year: 2001,
+    pages: 204,
+    similarbooks: ['richest man in babylon', 'the monk who sold his ferrari', 'think and grow rich'],
+    publisher: 'macmillan',
+    getsummary: function (){
+        console.log('this is book summary');
+    },
+    // the title of the book is rich dad poor dad written by robert in the year 2001 (this)
+    getsummary1: function (){
+        return `the title of the book is ${this.title} written by ${this.author} in the year ${this.year}`
+    },
+    ispopular: () => {
+        console.log('this book is popular');
+    },
+
+}
+console.log(book);
+
+book.getsummary()
+book.ispopular()
+console.log(book.getsummary1());
+
+// obj destructuring ability pick up more than one ppties at a time in the obj eg
+// const {publisher, year, author, pages} = book
+// console.log(publisher);
+// console.log(pages, year);    
+            // or
+            const {publisher, year, ...all} = book         
+console.log(all);
+
+const users = [
+    {name: 'Shehu', username: 'shehu1112', password: '623gvr7', age: 33},
+    {name: 'kunmi', username: 'kunmi1112', password: '623ghvgr7', age: 23},
+    {name: 'Shola', username: 'sholi1112', password: '623y3vr7', age: 13},
+    {name: 'ton', username: 'stom1112', password: '6233vr7', age: 43},
+]
+// age >= 18
+const canview = users.filter((user) =>{
+    return user.age >= 18;
+})
+console.log(canview);
+
+// staartwith
+const search = users.filter((kk) => {
+    return kk.name.startsWith('s') || kk.username.startsWith('s')
+})
+console.log(search);
+// includes 
+const search1 = users.filter((jj) =>{
+    return jj.name.includes('m') || jj.username.includes('m')
+})
+console.log(search1);
+
+
+// array destructuring are of two ways - 
+// rest work in LHS and spread works in RHS eg
+const ages = [32, 34, 65, 56, 76]
+const [...rest] = ages
+console.log(rest);
+
+// spread can work anywhere could be in the front, middle and back
+const newages = [2, ...ages, 32, 34, 6, 56, 76]
+console.log(newages);
+
+const newages1 = [...ages, 2, 3, 65, 6, 76]
+console.log(newages1);
+
+const newages2 = [2, 3, 4, 65, 56, 76, ...ages]
+console.log(newages2);
+
+// math obj - 8 math constants
+// math method - sqrt, trunc, round, random, ceil, floor eg
+
+console.log(Math.sqrt(25));
+console.log(Math.sqrt(2543).toFixed(2));
+
+console.log(Math.trunc(56.55467));
+
+console.log(Math.round(34.6537));
+
+// ceil round up regardless while floor round down regardless
+console.log(Math.ceil(3.56));
+console.log(Math.floor(2.7541));
+
+// random is to generate random num btw 0 & 1, but we could xply and add to it. eg
+console.log(Math.random() * 2);
+console.log(Math.random());
+console.log(Math.random() * 2 + 1);
+
+const computer1 = ['rock', 'paper', 'scissor']
+const randomnum1 = Math.trunc(Math.random() * 3)
+const randomchoice1 = computer1[randomnum1]
+console.log(randomchoice1);
+
+const computer = ['rock', 'paper', 'scissors']
+const randomnum = Math.trunc(Math.random() * 3)
+const computerchoice = computer[randomnum]
+ const playerchioce = 'rock'
+
+ const checkwin = function(computer, player){
+    if (computer === player) {
+        return 'This is a tie'
+    }else if (player === 'rock'){
+        if (computer ==='scissors'){
+            return 'Rock smashes scissors, You win!'
+        }else {
+            return 'Paper covers rock, You lose!'  
+    }
+    }else if (player ==='papper'){
+        if (computer === 'rock'){
+            return 'paper covers rock, You win!'
+        }else{
+            return 'scissors cut paper, You lose!'
+        }
+    } else if (player ==='scissors'){
+        if (computer === 'paper'){
+            return 'scissors cut paper, You win'
+        }else {
+            return 'Rock smashes scissors, You lose!'
+        }
+    }
+
+
+ }
+ const result = checkwin(computerchoice, playerchioce)
+console.log(result);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //  asybchronous
 //  DOM
 
